@@ -1,0 +1,1529 @@
+                    /* CORP */
+body 
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F8F8F8;
+    position: relative;
+    background-image:url(../img/fond.jpg);
+    overflow-x: hidden;
+}
+
+#background
+{
+    width: 100%;
+    height: 100%;
+}
+
+                    /* TITRES */
+
+h1
+{
+    color: brown;
+    font-size: 5em;
+    text-align: center;
+    font-family: "Bahagia" , Gabriola, Script, sans-serif , fantasy;
+    margin: 0;
+    padding: 0;
+    margin-top: -2%;
+    height: 1.3em;
+}
+
+h2
+{
+    font-size: 2.5em;
+    text-align: center;
+    color: brown;
+    font-family: Gabriola;
+    height: 1em;
+}
+
+h3
+{
+    font-family: Gabriola;
+    margin: auto;
+    margin-top: 2%;
+    color: brown;
+    font-size: 2.5em;
+    border-bottom: 3px #D9D3BD solid;
+    width: 41%; 
+    text-align: center;
+}
+
+h4
+{
+    font-family: Gabriola;
+    text-align: center;
+    color: brown;
+    border-bottom: 3px #D9D3BD solid;
+    width: 68%;
+    font-size: 2.5em;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+h5
+{
+    font-family: Gabriola;
+    text-align: center;
+    color: brown;
+    font-size: 1.5em;
+    height: 0em;
+}
+
+h6
+{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 5px;
+}
+                    
+                    /* LES BASIQUES */
+
+strong
+{
+    margin-right: 1%;
+}
+
+.lien
+{
+    text-align: center;
+}
+
+em
+{
+    text-align: center;
+}
+
+p
+{
+    text-align: justify;
+    font-size: 1.3em;
+    color: #424558;
+    display: flex;
+    justify-content: center;
+    font-family: Gabriola;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color: #d8663bdb;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover
+{
+    color: brown;
+}
+
+
+                    /* HEADER */
+
+#rebord
+{
+    border-top: 2px solid #D9D3BD;
+    width: 50%;
+    margin: auto;
+}
+
+#rebordComments
+{
+    border-top: 2px dotted #D9D3BD;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+header
+{
+    width: 100%;
+    margin-top: 3%;
+}
+ 
+header > ul /*Cible seulement les elements UL qui sont directement  enfants de nav*/
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header li
+{
+    list-style-type: none; /*Pour enlever les points devant les LI*/
+}
+
+header > ul > li
+{
+    float : left;
+    position: relative;
+    height: 5em;
+}
+
+header > ul::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header a
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+header > ul > li > a 
+{
+    padding: 10px 30px;
+    color: #424558;
+    font-family: Gabriola;
+    font-size: 2em;
+}
+
+header > ul > li > a:hover
+{
+    border-bottom: 2px #D9D3BD solid;
+    height: 45%;
+
+}
+
+                    /* MENU DEROULANT CATEGORIES */
+
+.submenu
+{
+    display: none;
+}
+
+.submenu li 
+{
+    border-bottom: 1px solid #CCC;
+    background-color: #EAE2C1;
+}
+
+.submenu li a 
+{
+    padding: 15px 30px;
+    font-size:13px;
+    color : #222538;
+    width: 270px;
+}
+
+.submenu li:hover
+{
+    background-color: #ebebeb;
+}                 
+
+
+                    /* SLIDER */
+
+#slides 
+{
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    height: 351px;
+
+}
+
+.slide 
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 1;
+    height: 351px;
+    width: 100%;
+    transition: opacity 1s;
+}
+
+.showing 
+{
+    opacity: 1;
+    z-index: 2;
+}
+
+#img1, #img2, #img3
+{
+
+    width: 100%;
+    box-shadow: -8px 6px 13px 3px #aaa;
+}
+
+
+                    /* PAGE D'ACCEUIL */
+
+#regroup
+{
+    margin-top: 3%;
+    margin-bottom: 7%;
+    display: flex;
+}
+
+.photo
+{
+    width: 33%;
+    margin-top: 2%;
+    width: 235px;
+    height: 200px;
+}
+
+#listeArticles
+{
+    border: 1px solid #D9D3BD;
+    width: 66%;
+    border-left: transparent;
+    border-bottom: transparent;
+}
+
+.articles
+{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    border-radius: 4%;
+}
+
+#explicationArticle
+{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+#dessins
+{
+        width: 15%;
+}  
+
+
+                    /* COTER DROIT */
+
+section
+{
+        width: 28%;
+        height: 65em;
+}
+
+#preview
+{
+    border: 2px #D9D3BD solid;
+    border-radius: 50%;
+    height: 13em;
+    width: 207px;
+    background-color: #ffffff80;
+    margin: auto;
+}
+
+#preview:hover
+{
+    background-color: #D9D3BD;
+}
+
+#preview p
+{
+    font-family: Gabriola;
+    color: #424558;
+    margin: auto;
+    text-align: center;
+    margin-top: 39%;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#previewArticle
+{
+    border: 2px solid #D9D3BD;
+    border-radius: 138px;
+    margin: auto;
+    height: 13em;
+    width: 207px;
+    background-color: #ffffff80;
+}
+
+#previewArticle:hover
+{
+        background-color: #D9D3BD;
+}
+
+#previewImg
+{
+    width: 100em;
+    margin-left: 29%;
+}
+
+#previewPhoto
+{
+    width: 51%;
+    margin: auto;
+    display: flex;
+}
+
+#lastArticle
+{
+    display: none;
+}
+
+#last 
+{
+    margin-top: 100px;
+}
+
+                    /* COMMENTAIRE SOUS ARTICLES */
+
+img#photo 
+{
+    width: 235px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+#commentaires
+{
+	text-align: center;
+}
+
+#espaceCommentaire
+{    
+    border: 1px #D9D3BD solid;
+    width: 75%;
+    margin: auto;   
+    border-bottom: transparent;
+    margin-bottom: 6%;
+}
+
+#espaceCommentaire a
+{
+    display: initial;
+}
+
+#pagination
+{
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+#pagination a 
+{
+    text-decoration: none;
+    color: #d8663bdb;
+    display: initial;
+}
+
+#messageSignaler
+{
+    border: #D9D3BD 1px solid;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 4%;
+    text-align: center;
+    margin-bottom: 2em;
+    font-family: Gabriola;
+    color: #d8663bdb;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#messages
+{
+    border: 0.7px #424558 solid;
+    border-radius: 3%;
+    box-shadow: 4px 5px 20px #424558;
+    height: 5em;
+}
+
+                    /* INSCRIPTION / CONNEXION */
+#inscription
+{
+    border: 2px #D9D3BD solid;
+    width: 46%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#inscription label 
+{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#inscription textarea 
+{
+    height: 14em;
+    width: 53%;
+}
+
+#connexion  a
+{
+    text-decoration: none;
+    color: #424558;  
+}
+
+#connexion p
+{
+    font-size: inherit;
+}
+
+#connexion
+{
+    border: 2px #D9D3BD solid;
+    width: 46%;
+    margin: auto;
+    margin-bottom: 8%;
+    margin-top: 5%;
+    border-radius: 3%;
+}
+
+#champPseudo
+{
+    width: 25%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding: 6px 12px;
+    border: 0.7px #424558 solid;
+    border-radius: 6%;
+    box-shadow: 4px 5px 20px #424558;
+}
+
+#connexion #champPseudo
+{
+    width: 48%;
+}
+input#souvenir
+{
+    text-align: center;
+    margin: auto;
+}
+
+                    /* MON COMPTE */
+
+#change_mdp
+{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 7em;
+    font-family: Gabriola;
+}
+
+#change_mdp p
+{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#change_mdp label
+{
+    font-size: 1.3em;
+}
+
+#compte
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#proposition
+{
+    margin-top: 3%;
+}
+
+#proposition p
+{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#form_idee
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#textaera_idee
+{
+    width: 372px;
+    height: 165px;
+    margin: 0px;
+}
+
+                    /*MOT DE PASSE OUBLIE */
+input#emailReset 
+{
+    width: 37%;
+    display: flex;
+    margin: auto;
+}
+#nouveauMDP 
+{
+    text-align: center;
+}
+#mdp_confirm 
+{
+    width: 200px;
+}
+
+                    /* COTER ADMIN */
+
+
+#nvx, #modifier, #signaler, #brouillon, #liste_proposition
+{
+    border: #D9D3BD 2px solid;
+    width: 25%;
+    margin: auto;
+    height: 2em;
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    font-family: Gabriola;
+}
+
+#regroupChoice
+{
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+#idee_article {
+    width: 55%;
+    margin: auto;
+    border: 1px #D9D3BD solid;
+    margin-bottom: 25px;
+}
+
+                    /* NOUVEL ARTICLE */
+                        /* FORMULAIRE */
+#tinymce
+{
+    width: 46%;
+    margin: auto;
+}
+
+#form
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    font-family: Gabriola;
+    color: #424558;
+    font-size: 1.5em;
+}
+
+#champ 
+{
+    margin: auto;
+    font-family: Gabriola;
+    font-size: 1.3em;
+    color: #424558;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#champ input
+{
+    border: 1px solid #424558;
+    border-radius: 4%;
+    box-shadow: 3px 4px 20px #424558;
+    width: 46%;
+    background-color: #ffffffa8;
+    height: 2em;
+}
+
+#formulaire_ifr
+{
+    height: 30em;
+}
+
+textarea
+{
+    height: 30em;
+}
+
+#choixCategorie
+{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;    
+}
+
+#joueurs
+{
+    width: 50%;
+}
+
+#temps
+{
+    width: 45%;
+}
+
+                        /* CONTACT */
+
+#NousContacter
+{
+    margin-left: 7%;
+
+}
+
+#NousContacter label 
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#NousContacter textarea 
+{
+    height: 14em;
+    width: 53%;
+}
+
+                        /* MODIFIER/SUPPRIMER ARTICLES */
+
+#choix
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+#matos
+{
+    width : 25%;
+    height : 4em;
+}
+
+#lesJeux
+{
+    border: #D9D3BD 2px solid;
+    width: 40%;
+    border-radius: 3%;
+    margin: auto;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.8em;
+    font-family: Gabriola;
+    margin-bottom: 2em;
+}
+
+#supprimer
+{
+	border: black 1px solid;
+    width: 8%;
+}
+
+                        /* MESSAGES SIGNALER */
+#signalement
+{
+    height: 0.4em;
+    margin-top: 0.6em;
+    margin-left: 0.3em;
+}
+
+                        /* PAGE D'EXPLICATION */
+    
+#explication
+{
+    width: 60%;
+    border-top: 1px #D9D3BD solid;
+    margin: auto;
+}
+                        /* BOUTTONS */
+
+
+#twoButton
+{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    height: 2em;
+}
+
+#envoyez, #retour
+{
+    border: 1px solid #D9D3BD;
+    border-radius: 8%;
+    color: #d8663bdb;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#retour
+{
+   width: 67px; 
+}
+
+#back
+{
+    border: 1px solid #D9D3BD;
+    border-radius: 8%;
+    width: 6%;
+    color: #d8663bdb;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.valider
+{
+    border: 1px solid #D9D3BD;
+    border-radius: 8%;
+    color: #d8663bdb;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+#bouttonConnecter
+{
+    border: 1px solid #D9D3BD;
+    border-radius: 8%;
+    height: 3em;
+    color: #d8663bdb;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#bouttonInscription
+{
+    border: 1px solid #D9D3BD;
+    border-radius: 8%;
+    width: 50%;
+    height: 3em;
+    color: #d8663bdb;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+
+}
+
+#bouttonContact
+{
+    border: 1px solid #D9D3BD;
+    border-radius: 8%;
+    width: 83px;
+    height: 3em;
+    color: #d8663bdb;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+#submit
+{
+    border: 1px solid #D9D3BD;
+    border-radius: 8%;
+    width: 20%;
+    height: 2em;
+    color: #d8663bdb;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+                                /* HOVER */
+
+header li:hover .submenu /*on modifie le sous menu .submenu uniquement lorsque l'utilisateur passe ca souris sur LI li:hover*/
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left:0%;
+    padding: 0px;
+    z-index: 1000;
+}
+
+#nvx:hover, #modifier:hover, #signaler:hover, #envoyez:hover, #retour:hover, #submit:hover, #bouttonInscription:hover, #bouttonConnecter:hover, #lesJeux:hover, #valider:hover, #brouillon:hover, #liste_proposition:hover
+{
+        background-color: #d9d3bdb8;
+}
+ 
+#connexion a:hover
+{
+color: #d8663bdb;
+}
+                
+                                /* LES LOGOS */
+#fleche
+{
+    margin: auto;
+    display: block;
+    height: 4.5em;        
+}
+
+#cadenas
+{
+    width: 2%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+#logoListe, #logoModifier
+{
+    width: 2%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1.3em;
+}
+
+                                /* FOOTER */
+footer
+{
+    width: 82%;
+    display: flex;
+    margin: auto;
+    border-top: 2px solid #D9D3BD ;
+    text-shadow: 0 0 black;
+    margin-top: 3%;
+}
+
+footer p
+{
+    text-align: center;
+}
+
+#petit 
+{
+    font-size: 14px;
+}
+
+#mail, #twitter, #facebook
+{
+    width: 10%;
+    width: 10%;
+    margin-left: 46%;
+}
+
+#mail:hover, #twitter:hover, #facebook:hover
+{
+    opacity: 0.5;
+}
+    
+#about, #follow, #contact
+{
+    width: 35%;
+}
+
+#follow a, #contact a
+{
+    display: block;
+}
+
+
+
+
+                            /*RESPONSIVE*/
+
+        /*2560px*/
+
+@media screen and (max-width : 2560px){
+    #img1, #img2, #img3
+    {
+        height: 351px;
+    }
+    
+}
+
+
+        /*1500px*/
+
+@media screen and (max-width : 1500px){
+    #connexion #form
+    {
+        width: 100%;
+    }
+    
+    #connexion p
+    {
+        font-size: inherit;
+        text-align: center;
+        display: block;
+    }
+
+    
+}
+
+
+        /*1300px*/
+
+@media screen and (max-width : 1300px){
+    #tinymce
+    {
+        width: 60%;
+    }
+    
+}
+
+
+        /*1200px*/
+
+@media screen and (max-width : 1210px){
+    #last
+    {
+        display: none;
+    }
+    
+    #popular
+    {
+        margin: auto;
+        width: 50%;
+    }
+    
+    section
+    {
+        width: initial;
+        height: initial;
+    }
+    
+    #listeArticles
+    {
+        border: none;
+        width: initial;
+    }
+    
+    #regroup
+    {
+        display: block;
+    }
+    
+    h4{
+        font-size: 1.9em
+    }
+    
+    
+    h3
+    {
+        font-size: 2em;
+        width: 57%;
+    }
+    
+    #inscription
+    {
+        width: 55%;
+    }
+    
+    #nvx, #modifier, #signaler, #brouillon, #liste_proposition
+    {
+        width: 45%;
+    }
+}
+
+            /*1024px*/
+
+@media screen and (max-width : 1024px){
+    #messageSignaler
+    {
+        width: 30%
+    }
+}
+
+
+            /*1000px*/
+@media screen and (max-width : 1000px){
+    footer
+    {
+        width: 97%;
+    }
+    
+    #form
+    {
+        width: 66%;
+    }
+    
+    #connexion
+    {
+        width: 100%;
+    }
+    
+    #connexion p
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #messageSignaler
+    {
+        width: 40%;
+    }
+    
+}
+
+        /*900*/
+@media screen and (max-width : 900px){
+    #cadenas
+    {
+        width: 4%;
+    } 
+    
+    #lesJeux
+    {
+        width: 80%;    
+    }
+    
+    #logoListe, #logoModifier
+    {
+        width: 4%;
+    }
+
+    #back
+    {
+        width: 11%;
+    }
+    
+    #tinymce
+    {
+    width: 80%;
+    }
+   
+}
+
+        /*850*/
+@media screen and (max-width : 850px){
+    #explication h2
+    {
+        font-size: 2.3em;
+    }
+}    
+    
+
+        /*813*/
+@media screen and (max-width : 813px){
+    header > ul > li > a
+    {
+        padding: 10px 20px;
+    }
+        header > ul 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+     
+    header > ul > li
+    {
+        float: left;
+        position: initial;
+        height: initial;
+    }
+    #compte
+    {
+        display: block;
+    }
+    #proposition
+    {
+        width: 50%;
+        margin: auto;
+    }
+}    
+    
+        /*748px*/
+@media screen and (max-width : 748px){
+
+    h3
+    {
+        width: 60%;
+    }
+    
+    header > ul > li > a
+    {
+      font-size: 1.5em;
+    }
+    
+    h1
+    {
+    font-size: 4em;
+    }
+    
+    #nvx, #modifier, #signaler, #brouillon, #liste_proposition
+    {
+    width: 70%;
+    }
+    
+    #NousContacter textarea 
+    {
+        height: 14em;
+        width: 90%;
+    }
+    
+    #inscription 
+    {
+        width: 90%;
+    }
+}
+
+
+        /*721*/
+@media screen and (max-width : 721px){
+    h2
+    {
+        font-size: 2em;
+    }
+}
+
+        /*710*/
+@media screen and (max-width : 710px){
+    #about
+    {
+        display: none;
+    }
+    
+    #follow, #contact
+    {
+        width: initial;
+    }
+    
+    #tinymce
+    {
+        width: 100%;
+    }
+        
+    #explication h2
+    {
+        font-size: 2em;
+    }
+    
+    h4 
+    {
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+
+}
+
+        /*600*/
+@media screen and (max-width : 600px){
+    #espaceCommentaire
+    {
+        border-left: transparent;
+        border-right: transparent;
+    }
+    
+    #form
+    {
+        width: 100%;
+    }
+    
+    #choix
+    {
+        margin-top: -30px;
+    }
+    
+    #bouttonInscription
+    {
+        width: 35%;
+    }
+    
+    #back
+    {
+        width: 20%;
+    }
+    
+    #messageSignaler
+    {
+        width: 65%;
+    }  
+    
+    #champ input
+    {
+        width: 75%;
+    }
+    
+    #explication
+    {
+     width: initial; 
+    }
+}
+
+        /*585*/
+@media screen and (max-width : 585px){
+    #slides
+    {
+        display: none;
+    }
+    
+    header > ul > li > a
+    {
+        padding: 10px 7px;
+    }    
+    
+    h2
+    {
+        font-size: 2em;
+    }
+}
+
+        /*550*/
+@media screen and (max-width : 550px){
+    #inscription p
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #inscription input
+    {
+        height: 3px;
+        margin: auto;
+        width: 60%;
+    }
+
+}
+
+        /*516*/
+@media screen and (max-width : 516px){
+    h3 {
+        width: 90%;
+    }
+    
+    #champPseudo
+    {
+        width: initial;
+    }   
+    
+    #formNvx
+    {
+        margin-top: 5em;
+    }
+    
+}
+
+        /*480*/
+@media screen and (max-width : 480px){
+    h2
+    {
+        font-size: 2em;
+    }
+    
+    #submit
+    {
+        width: 35%;
+    }
+    
+    #cadenas
+    {
+        width: 8%;
+    } 
+      
+    header > ul > li > a
+    {
+        font-size: 1.2em;
+    }
+    
+    #nvx, #modifier, #signaler, #brouillon , #liste_proposition
+    {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    
+    #lesJeux
+    {
+        width: initial;
+    }
+    #rebord
+    {
+        width: 100%;
+    }
+    #explicationArticle
+    {
+        width: 100%;
+    }
+    
+}
+
+            /*387*/
+
+@media screen and (max-width: 387px){
+    header > ul > li > a
+    {
+        padding: 20px 5px;
+    }
+
+    h2
+    {
+        font-size: 1.5em;
+    }
+}
+    
+        /*382*/
+@media screen and (max-width : 382px){
+    header > ul > li > a
+    {
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 5px;
+    }
+
+    h3
+    {
+        font-size: 1.6em;
+        width: 100%;
+        text-align: center;
+    }
+   
+    
+    h1
+    {
+        font-size: 3em;
+        margin-top: initial;
+        height: initial;
+    }
+     
+    
+    header > ul > li > a:hover
+    {
+        border-bottom: 2px #D9D3BD solid;
+        height: 17%;
+    }
+    
+    p
+    {
+        font-size: 1.2em;
+    }
+
+    #bouttonContact
+    {  
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+            /*345*/
+@media screen and (max-width : 345px){
+    #lesJeux
+    {
+        font-size: 1.3em;
+    }
+    
+    h2
+    {
+        font-size: 1.5em;
+        height: initial;
+    }
+    
+    #back
+    {
+        width: 35%;
+    }
+    
+    #messageSignaler 
+    {
+        width: 100%;
+    }
+    
+    #formNvx
+    {
+        margin-top: initial;
+    }
+    
+    #champ input
+    {
+        width: 100%;
+    }
+    .articles
+    {
+        width: 100%;
+    }
+    #preview
+    {
+        border-radius: initial;
+
+    }
+
+}
+
+
+            /*311*/
+
+@media screen and (max-width: 311px){
+    header > ul > li > a
+    {
+        padding: 10px 2px;
+    }
+}
+            /*274*/
+@media screen and (max-width : 274px){
+    header > ul > li > a
+    {
+        padding: 10px 1px;
+    }
+    
+    header > ul > li > a
+    {
+        font-size: 0.9em;
+    }  
+        
+    h2
+    {
+        font-size: 1.3em;
+    }  
+    
+    #choixCategorie
+    {
+        display: initial;
+    }    
+    
+    #temps, #joueurs
+    {
+        width: initial;
+    }
+    
+ }
